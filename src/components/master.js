@@ -1,9 +1,10 @@
 import React from 'react'
+import Rendertable from "./child-components/table";
 
 export default function Mastercomponent() {
-  return (
-    <div>
-        <h1 className='text-3xl'>master</h1>
-    </div>
-  )
+    return (
+        <div>
+            <Rendertable />
+        </div>
+    )
 }
