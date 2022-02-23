@@ -18,7 +18,7 @@ export default function Rendertable({ tableData, searchString }) {
                                 </thead>
                                 <tbody className="bg-white divide-y divide-gray-200">
                                     {searchString ? (
-                                        tableData.length == '' ? <tr><td>No Data Found</td></tr> : (
+                                        tableData.length == '' ? <tr><td colSpan="7" className='text-center py-5 font-sans font-semibold text-red-500'> Uh oh! No Data Found</td></tr> : (
                                             tableData.map((person) => (
                                                 <tr key={person.email}>
                                                     <td className="px-6 py-4 whitespace-nowrap">
@@ -81,7 +81,6 @@ export default function Rendertable({ tableData, searchString }) {
                                         </tr>
                                     ))
                                     )}
-
                                 </tbody>
                             </table>
                         </div>

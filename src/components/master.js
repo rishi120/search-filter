@@ -16,7 +16,7 @@ export default function Mastercomponent() {
         const searchTerm = nameandtitle.toLowerCase();
         const result = [];
         people.filter((filteredData) => {
-            if (filteredData.name.toString().toLowerCase().includes(searchTerm) || filteredData.title.toString().toLowerCase().includes(searchTerm)) {
+            if (filteredData.name.toString().toLowerCase().includes(searchTerm) || filteredData.title.toString().toLowerCase().includes(searchTerm) || filteredData.role.toString().toLowerCase().includes(searchTerm)) {
                 return result.push(filteredData);
             }
         })
