@@ -1,3 +1,4 @@
+// dummy static table data
 export const people = [
     {
         name: 'Jane Cooper',
@@ -54,20 +55,20 @@ export const people = [
             'https://images.unsplash.com/photo-1643719142162-4406375cbd02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     },
     {
-        name: 'Jane Cooper',
-        title: 'Regional Paradigm Technician',
-        department: 'Optimization',
-        role: 'Admin',
-        email: 'jane.cooper@example.com',
+        name: 'Ravi Khanna',
+        title: 'IT Engineer',
+        department: 'Engineering',
+        role: 'Hardware',
+        email: 'ravi.khanna@example.com',
         image:
             'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
     },
     {
-        name: 'Jane Cooper',
-        title: 'Regional Paradigm Technician',
-        department: 'Optimization',
-        role: 'Admin',
-        email: 'jane.cooper@example.com',
+        name: 'Noel Lobbo',
+        title: 'Software Engineer',
+        department: 'IT',
+        role: 'Engineering',
+        email: 'noel.lobo@example.com',
         image:
             'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
     },

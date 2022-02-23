@@ -1,9 +1,9 @@
 import React from 'react'
-import { people } from "../../data/table-data";
 import Rendertablerowdata from "./table-row";
 import Searchinputs from "./inputs";
 
-export default function Rendertable() {
+export default function Rendertable({tableData}) {
+    // this is the main component which is handling the entire table ui. 
     return (
         <div className='px-8 py-8'>
             <Searchinputs />
@@ -16,7 +16,7 @@ export default function Rendertable() {
                                     <Rendertablerowdata />
                                 </thead>
                                 <tbody className="bg-white divide-y divide-gray-200">
-                                    {people.map((person) => (
+                                    {tableData.map((person) => (
                                         <tr key={person.email}>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
@@ -24,7 +24,7 @@ export default function Rendertable() {
                                                         <img className="h-10 w-10 rounded-full" src={person.image} alt="" />
                                                     </div>
                                                     <div className="ml-4">
-                                                        <div className="text-sm font-medium text-gray-900">{person.name}</div>
+                                                        <div className="text-sm font-semibold text-blue-600">{person.name}</div>
                                                         <div className="text-sm text-gray-500">{person.email}</div>
                                                     </div>
                                                 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 export default function Rendertablerowdata() {
+    // I had splitted the table component and extracted the table row element inside this component.
     return (
         <tr>
             <th
