@@ -8,6 +8,7 @@ export default function Mastercomponent() {
     // the master component where all the logic will be written.
     const [tableData, setTableData] = useState(people);
     const searchInput = useRef();
+
     const handleInput = (nameandtitle) => {
         const searchTerm = nameandtitle.toLowerCase();
         const result = [];
