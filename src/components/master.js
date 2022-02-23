@@ -34,7 +34,8 @@ export default function Mastercomponent() {
 
     return (
         <div>
-            <h1 className='text-2xl p-4 px-8 font-sans font-semibold text-slate-900'>Search and Filter</h1>
+            <h1 className='text-2xl p-4 px-8 pb-2 font-sans font-semibold text-slate-900'>Search and Filter</h1>
+            <hr className='ml-[35px] w-[95%]'/>
             <Data.Provider value={values}>
                 <Rendertable tableData={tableData} />
             </Data.Provider>
