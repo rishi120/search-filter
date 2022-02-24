@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+.common-table-header {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
 @tailwind utilities;
 
 body {
