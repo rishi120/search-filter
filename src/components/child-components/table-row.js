@@ -3,6 +3,8 @@ export default function Rendertablerowdata() {
     // I had splitted the table component and extracted the table row element inside this component.
     return (
         <tr>
+            <th scope="col"
+                className="common-table-header"></th>
             <th
                 scope="col"
                 className="common-table-header"

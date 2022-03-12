@@ -8,6 +8,8 @@ export default function Mastercomponent() {
     // the master component where all the logic will be written.
     const [tableData, setTableData] = useState([]);
     const [searchString, setSearchString] = useState('');
+    const [counter, setCounter] = useState(0);
+    const [inputChecked, setInputChecked] = useState(false);
     const searchInput = useRef();
 
 
@@ -21,6 +23,11 @@ export default function Mastercomponent() {
             }
         })
         setTableData(result);
+    }
+
+    const handleInputChange = (id) => {
+        setInputChecked(id);
+        setCounter(counter + 1);
     }
 
     const values = {
@@ -40,7 +47,7 @@ export default function Mastercomponent() {
             <h1 className='text-2xl p-4 px-8 pb-2 font-sans font-semibold text-slate-900'>Search and Filter</h1>
             <hr className='ml-[35px] w-[95%]' />
             <Data.Provider value={values}>
-                <Rendertable tableData={tableData} searchString={searchString} />
+                <Rendertable tableData={tableData} searchString={searchString} counter={counter} handleInputChange={handleInputChange} inputChecked={inputChecked} />
             </Data.Provider>
         </div>
     )
